@@ -155,7 +155,7 @@ hist(huge.exp.1.mat)
 >Рассчитайте среднее 137-й колонки из _huge.exp.1.mat_.
 
 ```{r}
-mean(huge.exp.1.mat[137])
+mean(huge.exp.1.mat[,137])
 ```
 
 ## 6
