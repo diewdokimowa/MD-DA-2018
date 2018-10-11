@@ -1,5 +1,6 @@
 #Загрузите данные в датафрейм. Адрес: github    https://raw???путь_к_файлу_найдите_сами???/data/gmp.dat 
-gmp <- ...
+gmp <- read.table("https://raw.githubusercontent.com/SergeyMirvoda/MD-DA-2018/master/data/gmp.dat", header = TRUE)
+gmp$pop <- gmp$gmp /gmp$pcgmp
 
 estimate.scaling.exponent <- function(a, y0=6611, response=gmp$pcgmp,
                                         predictor = gmp$pop, maximum.iterations=100, deriv.step = 1/100,
