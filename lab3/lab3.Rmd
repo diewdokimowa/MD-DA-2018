@@ -97,7 +97,7 @@ rating.worth.formatted.table = as.data.frame(table(rating.worth.formatted))
 length(rating.worth.formatted.table$Freq >= 2)
 ```
 
-Повторяющихся значений: $66$.
+Повторяющихся значений: 66.
 
 # Задание 2
 ## 1
@@ -126,7 +126,7 @@ length(worths)
 >Все элементы вектора _worths_ больше 1 миллиарда.
 
 ```{r}
-all(worths > 1e9)
+all(worths > 1000000000)
 ```
 
 ### iii
